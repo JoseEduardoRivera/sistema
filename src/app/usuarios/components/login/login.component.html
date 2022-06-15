@@ -1,0 +1,16 @@
+<div class="container">
+<form #formLogin="ngForm" (ngSubmit)="onLogin(formLogin)">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese el email"
+      name="email" ngModel required>
+      <small id="emailHelp" class="form-text text-muted">Nunca compartiremos su correro electronico</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Contraseña</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="contraseña"
+      name="password" ngModel required>
+    </div>
+    <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+  </form>
+</div>
